@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntregaCRUD.MainPage">
+
+    <StackLayout>
+
+        <Entry x:Name="txtIdStudent" IsVisible="False"/>
+        <Entry x:Name="txtName" Placeholder="Name"/>
+        <Entry x:Name="txtLastName" Placeholder="Last Name"/>
+        <Entry x:Name="txtAge" Placeholder="Age"/>
+        <Entry x:Name="txtEmail" Placeholder="Email"/>
+        <Button x:Name="btnRegister" Text="Register" Clicked="btnRegister_Clicked"/>
+        <Button x:Name="btnUpdate" Text="Update" Clicked="btnUpdate_Clicked" IsVisible="False"/>
+        <Button x:Name="btnDelete" Text="Delete" Clicked="btnDelete_Clicked" IsVisible="False"/>
+        <ListView x:Name="lstStudents" ItemSelected="lstStudents_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding IdStudent}" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                            <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1" TextColor="Gray"/>
+                            <Label Text="{Binding LastName}" Grid.Row="0" Grid.Column="2" TextColor="Gray"/>
+                            <Label Text="{Binding Age}" Grid.Row="0" Grid.Column="3" TextColor="Gray"/>
+                            <Label Text="{Binding Email}" Grid.Row="0" Grid.Column="4" TextColor="Orange"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
+
+    </StackLayout>
+
+
+</ContentPage>
