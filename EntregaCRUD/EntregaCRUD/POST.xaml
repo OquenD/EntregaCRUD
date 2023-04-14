@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntregaCRUD.POST">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtIdMembership" Placeholder="Id Membership"/>
+            <Entry x:Name="txtEmail" Placeholder="Email"/>
+            <Entry x:Name="txtPhoneNumber" Placeholder="Phone Number"/>
+            <Entry x:Name="txtOldPin" Placeholder="Old Pin"/>
+            <Entry x:Name="txtNewPin" Placeholder="New Pin"/>
+            <Button Text="Update Informacion" x:Name="btnDatos" Clicked="btnInfo_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

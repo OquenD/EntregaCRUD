@@ -156,6 +156,17 @@ namespace EntregaCRUD
             txtEmail.Text = " ";
         }
 
+        private async void btnGetAPI_Clicked(object sender, EventArgs e)
+        {
+           await Navigation.PushAsync(new GET());
+        }
+
+        private async void btnPostAPI_Clicked(object sender, EventArgs e)
+        {
+          await  Navigation.PushAsync(new POST());
+        }
+
+
     }
 
 }

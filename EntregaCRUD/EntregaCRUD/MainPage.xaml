@@ -13,6 +13,8 @@
         <Button x:Name="btnRegister" Text="Register" Clicked="btnRegister_Clicked"/>
         <Button x:Name="btnUpdate" Text="Update" Clicked="btnUpdate_Clicked" IsVisible="False"/>
         <Button x:Name="btnDelete" Text="Delete" Clicked="btnDelete_Clicked" IsVisible="False"/>
+        <Button x:Name="btnGetAPI" Text="Get_API" Clicked="btnGetAPI_Clicked"/>
+        <Button x:Name="btnPostAPI" Text="Post_API" Clicked="btnPostAPI_Clicked"/>
         <ListView x:Name="lstStudents" ItemSelected="lstStudents_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
